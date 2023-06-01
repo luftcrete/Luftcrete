@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- SweetAlert2-->
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.6/dist/sweetalert2.min.css" rel="stylesheet">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -33,8 +35,8 @@
                         <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
                         <li class="nav-item"><a class="nav-link" href="#service">Values</a></li>
                         <li class="nav-item"><a class="nav-link" href="#pricing">Product</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Contact</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,9 +57,12 @@
         <section class="about-section text-center" id="about">
             <div class="container px-4 px-lg-8">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-black mb-4">Company Background</h2>
-                        <p class="text-grey-50">
+                  <h2 class="text-black mb-4">Company Background</h2>
+                  <div class="col-lg-2">
+                    <img class="img-fluid" src="assets/logo.png" alt="..." />
+                  </div>
+                    <div class="col-lg-10">
+                        <p>
                             <b>LuftCrete Philippines</b> is a company that operates as a subsidiary of a well-
                             established firm that specializes in the production and distribution of
                             ready-mixed concrete in Cebu. The name "LuftCrete" is a combination of
@@ -67,24 +72,26 @@
                             provides exceptional strength and durability. The sister company, widely
                             known as Asia Concrete Solutions, is a leading player in the industry with
                             a proven track record of delivering high-quality products and services to
-                            its customers. The company recognized the need for a lightweight,
+                            its customers. 
+                        </p>
+                    </div>
+                      <p>
+                        The company recognized the need for a lightweight,
                             durable, and eco-friendly building material to meet the growing demand
                             for sustainable construction solutions. As a result, LuftCrete was founded
                             with LuftPanel and LuftBlocks.
-                        </p>
-                        <p>
-                          
-                          LuftPanel and LuftBlocks are types of precast foam concrete that offer
-                          superior insulation, fire resistance, and acoustic performance compared
-                          to traditional building materials. These are made from a mixture of
-                          cement, fly ash, water, and an expanding agent. With the sister company's
-                          extensive experience in the ready-mixed concrete industry, LuftCrete has
-                          been able to leverage its expertise in production, logistics, and quality
-                          control to ensure consistent and reliable pricing supply to its customers.
-                        </p>
-                    </div>
+                      </p>
+                      <p>
+                        LuftPanel and LuftBlocks are types of precast foam concrete that offer
+                        superior insulation, fire resistance, and acoustic performance compared
+                        to traditional building materials. These are made from a mixture of
+                        cement, fly ash, water, and an expanding agent. With the sister company's
+                        extensive experience in the ready-mixed concrete industry, LuftCrete has
+                        been able to leverage its expertise in production, logistics, and quality
+                        control to ensure consistent and reliable pricing supply to its customers.
+                      </p>
                 </div>
-                <img class="img-fluid" src="assets/logo.png" alt="..." />
+                <!-- <img class="img-fluid" src="assets/logo.png" alt="..." /> -->
             </div>
         </section>
         <!-- OverView-->
@@ -174,9 +181,8 @@
           </section>
         <!-- Products -->
           <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="section-padding pricing">
-        <div class="container">
-  
+    <section class="section-padding pricing">
+        <div id="pricing" class="container">
           <div class="section-title">
             <div class="col-md-12 text-center">
                 <h2 class="service-title pad-bt15">Product</h2>
@@ -288,196 +294,157 @@
             </div>
   
           </div>
-        </div>
-        <div class="how-section1">      
-          <div class="row">
-              <div class="col-md-6 how-img">
-                  <img src="https://image.ibb.co/dDW27U/Work_Section2_freelance_img1.png" class="rounded-circle img-fluid" alt=""/>
-              </div>
-              <div class="col-md-6">
-                  <h4>Lighter weight</h4>
-                              <h4 class="subheading">We are significantly lighter than traditional building materials, which
-                                reduces the overall weight of the building and allows for larger structures to be
-                                constructed without additional support.</h4>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-6">
-                  <h4>Energy efficiency</h4>
-                              <h4 class="subheading">We got an excellent thermal insulation property, reducing the amount
-                                of energy needed to heat and cool buildings. This can lead to significant cost savings in
-                                energy bills over time.</h4>
-              </div>
-              <div class="col-md-6 how-img">
-                  <img src="https://image.ibb.co/cHgKnU/Work_Section2_freelance_img2.png" class="rounded-circle img-fluid" alt=""/>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-6 how-img">
-                   <img src="https://image.ibb.co/ctSLu9/Work_Section2_freelance_img3.png" class="rounded-circle img-fluid" alt=""/>
-              </div>
-              <div class="col-md-6">
-                  <h4>Fire resistance</h4>
-                              <h4 class="subheading">LuftCrete has a high resistance to fire, making it a safer option for
-                                buildings in high-risk areas or those that require a higher level of fire protection.</h4>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-6">
-                  <h4>Sound insulation</h4>
-                              <h4 class="subheading">LuftCrete has excellent sound insulation properties, reducing noise
-                                pollution inside and outside of buildings.</h4>
-              </div>
-              <div class="col-md-6 how-img">
-                  <img src="https://image.ibb.co/gQ9iE9/Work_Section2_freelance_img4.png" class="rounded-circle img-fluid" alt=""/>
-              </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 how-img">
-                 <img src="https://image.ibb.co/ctSLu9/Work_Section2_freelance_img3.png" class="rounded-circle img-fluid" alt=""/>
-            </div>
-            <div class="col-md-6">
-                <h4>Durability</h4>
-                            <h4 class="subheading">LuftCrete is highly durable and resistant to impact, weather, and other types
-                              of wear and tear, resulting in a longer lifespan for buildings constructed with this material.</h4>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-                <h4>Sustainability</h4>
-                            <h4 class="subheading">LuftCrete is made from natural materials and has a lower environmental
-                              impact than traditional building materials. It is also recyclable and can be reused in other
-                              building projects.</h4>
-            </div>
-            <div class="col-md-6 how-img">
-                <img src="https://image.ibb.co/gQ9iE9/Work_Section2_freelance_img4.png" class="rounded-circle img-fluid" alt=""/>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 how-img">
-                 <img src="https://image.ibb.co/ctSLu9/Work_Section2_freelance_img3.png" class="rounded-circle img-fluid" alt=""/>
-            </div>
-            <div class="col-md-6">
-                <h4>Easy installation</h4>
-                            <h4 class="subheading">LuftCrete can be easily cut, shaped, and installed, making it a faster and
-                              more efficient option for construction projects.</h4>
-            </div>
-          </div>
-      </div>
-      </section><!-- End Pricing Section -->
-
-              <!-- About-->
-              <section class="section-padding" id="projects">
-                <div class="container">
-                    <div class="text-center">
-                      <div class="col-md-12 text-center">
-                        <h2 class="service-title pad-bt15">Projects</h2>
-                      </div>
-                      <br>
-                    </div>
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image"><img class="rounded-projects img-gg" src="assets/img/team/team-1.jpg" alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Coming Soon</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/team/team-2.jpg" alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Coming Soon</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>
-                                    Develop
-                                    <br />
-                                    Your Project 
-                                    <br />
-                                    with us!
-                                </h4>
-                            </div>
-                        </li>
-                    </ul>
+          <div class="how-section1">      
+            <div class="row">
+                <div class="col-md-6 how-img">
+                    <img src="./assets/Lightweight.png" class="rounded-circle img-fluid" alt=""/>
                 </div>
-            </section>
-   <!-- ======= Team Section ======= -->
-   <section id="team" class="team section-bg">
-    <div class="container">
-
-      <div class="section-title" data-aos="fade-up">
+                <div class="col-md-6">
+                    <h4>Lighter weight</h4>
+                                <p>We are significantly lighter than traditional building materials, which
+                                  reduces the overall weight of the building and allows for larger structures to be
+                                  constructed without additional support.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Energy efficiency</h4>
+                                <p>We got an excellent thermal insulation property, reducing the amount
+                                  of energy needed to heat and cool buildings. This can lead to significant cost savings in
+                                  energy bills over time.</p>
+                </div>
+                <div class="col-md-6 how-img">
+                    <img src="./assets/EnergyEfficient.png" class="rounded-circle img-fluid" alt=""/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 how-img">
+                     <img src="./assets/FireResistant.png" class="rounded-circle img-fluid" alt=""/>
+                </div>
+                <div class="col-md-6">
+                    <h4>Fire resistance</h4>
+                                <p>LuftCrete has a high resistance to fire, making it a safer option for
+                                  buildings in high-risk areas or those that require a higher level of fire protection.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Sound insulation</h4>
+                                <p>LuftCrete has excellent sound insulation properties, reducing noise
+                                  pollution inside and outside of buildings.</p>
+                </div>
+                <div class="col-md-6 how-img">
+                    <img src="./assets/SoundInsulator.png" class="rounded-circle img-fluid" alt=""/>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 how-img">
+                   <img src="./assets/Durable.png" class="rounded-circle img-fluid" alt=""/>
+              </div>
+              <div class="col-md-6">
+                  <h4>Durability</h4>
+                              <p>LuftCrete is highly durable and resistant to impact, weather, and other types
+                                of wear and tear, resulting in a longer lifespan for buildings constructed with this material.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <h4>Sustainability</h4>
+                              <p>LuftCrete is made from natural materials and has a lower environmental
+                                impact than traditional building materials. It is also recyclable and can be reused in other
+                                building projects.</p>
+              </div>
+              <div class="col-md-6 how-img">
+                  <img src="./assets/Sustainable.png" class="rounded-circle img-fluid" alt=""/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 how-img">
+                   <img src="./assets/EasyInstall.png" class="rounded-circle img-fluid" alt=""/>
+              </div>
+              <div class="col-md-6">
+                  <h4>Easy installation</h4>
+                              <p>LuftCrete can be easily cut, shaped, and installed, making it a faster and
+                                more efficient option for construction projects.</p>
+              </div>
+            </div>
+        </div>
+        </div>
+      </section><!-- End Pricing Section -->
+          
+      
+      <!-- ======= Contact Section ======= -->
+    <section class="section-padding contact">
+      <div class="section-title">
         <div class="col-md-12 text-center">
             <h2 class="service-title pad-bt15">Contact</h2>
-            <p>Contact the following persons</p>
           </div>
       </div>
+      <br>
+      <div id="contact" class="container" data-aos="fade-up">
+        <div class="row">
 
-      <div class="row">
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Cityscape Hotel Cebu and Mandaue (Official),Ayala access road (axis), F. Cabahug St, Mandaue City, 6014 Cebu, Philippines</p>
+              </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.180490834476!2d123.9184092102707!3d10.327436289752766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9990491c0a235%3A0x653e8a0cce5be966!2sCityscape%20Hotel%20Cebu%20and%20Mandaue%20(Official)!5e0!3m2!1sen!2sus!4v1685080923074!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
-            <div class="member-info">
-              <h4>Jonathan Geriobese</h4>
-              <span>jgeriobese.luftcrete@gmail.com</span>
-              <span>+639915353006</span>
-            </div>
+
           </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form name="submit-to-google-sheet" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" class="disabled">Send Message</button></div>
+            </form>
+          </div>
+
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Randy Cabuncal</h4>
-              <span>Product Manager</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Kerry Courtney Pontemayor</h4>
-              <span>CTO</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Yvonne Tombiga</h4>
-              <span>Accountant</span>
-            </div>
-          </div>
-        </div>
       </div>
-
-    </div>
-  </section><!-- End Team Section -->
+    </section><!-- End Contact Section -->
         <!-- Footer-->
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.easing.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.6/dist/sweetalert2.all.min.js"></script>
         <footer class="footer small text-center text-white-50" style="background: #e3e5eb;">
           <div class="container px-4 px-lg-5 text-black">Visit us on Facebook: <a href=""><b>@LuftcretePhilippines</b></a></div>
           <div class="container px-4 px-lg-5 text-black">Copyright &copy; Luftcrete Philippines <span id="copyright">
@@ -488,11 +455,73 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script src="js/wow.js"></script>
+
+        <script>
+           
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          });
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbxZ7aakoeIm624NquK-JYwOOWadI8wXSd7x0tV2aDWYDwnyP9wUqLdFyHgtFbhKJ5sA/exec'
+          const form = document.forms['submit-to-google-sheet']
+          
+          form.addEventListener('submit', e => {
+            ShowPageLoader();
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(
+                  response => { 
+                    HidePageLoader();
+                    form.reset();
+                    Toast.fire({
+                      icon: 'success',
+                      title: 'Email Sent Successfully!'
+                    })
+                  }
+                )
+              .catch(error => {
+                console.error('Error!', error.message)
+                Toast.fire({
+                      icon: 'error',
+                      title: error.message
+               })
+            })
+          })
+
+          function HidePageLoader() {
+                swal.close();
+            }
+
+          function ShowPageLoader() {
+               Swal.fire({
+                    title: 'Please Wait!',
+                    html: 'Connecting to Email Server!',
+                    allowOutsideClick: false,
+                    showCancelButton: false,
+                    showConfirmButton: false,
+                    didOpen: () => {
+                       Swal.showLoading();
+                    },
+                    width: 600,
+                  padding: '3em',
+                  color: '#ff7f00',
+                  background: '#fff url(/images/trees.png)',
+                  backdrop:`
+                    rgba(100,161,157,0.4)
+                    url("/images/nyan-cat.gif")
+                    left top
+                    no-repeat
+                  `
+                });
+            }
+        </script>
     </body>
 </html>
